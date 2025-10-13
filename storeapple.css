@@ -1,0 +1,37 @@
+#layout {
+  margin: 0 auto;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 12px;
+}
+.header {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  height: 44px;
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.jijiglogo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.headerbichig {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

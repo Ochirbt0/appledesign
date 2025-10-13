@@ -1,9 +1,415 @@
 #layout {
   margin: 0 auto;
   width: 1920px;
-  height: 692px;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 12px;
 }
 .header {
   position: fixed;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  height: 44px;
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.jijiglogo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.headerbichig {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donate {
+  display: flex;
+  width: 1920px;
+  height: 52px;
+  margin-top: 52px;
+  justify-content: center;
+  align-items: center;
+}
+.page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  gap: 12px;
+}
+.arvanzurgaapro {
+  background-image: url(./zurag1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 692px;
+  padding-top: 55px;
+}
+.bichig {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.ip16 {
+  font-size: 52px;
+  font-weight: 600;
+}
+.hello-apple-bichig {
+  font-size: 24px;
+  font-weight: 400;
+}
+.learnmore {
+  border-radius: 999px;
+  width: 123px;
+  height: 44px;
+  background-color: #0071e3;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  border: transparent;
+}
+.buy {
+  border-radius: 999px;
+  width: 68px;
+  height: 44px;
+  background-color: transparent;
+  color: #2997ff;
+  border: 1px solid #2997ff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.arvanzurgaa {
+  background-image: url(./zurag2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 692px;
+  padding-top: 55px;
+}
+.gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url(./zurag3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 692px;
+  row-gap: 16px;
+}
+.giftmagic {
+  font-size: 52px;
+  font-weight: 600;
+}
+.jijig-giftbichig {
+  font-size: 24px;
+  font-weight: 400;
+}
+.shopgifts {
+  width: 114px;
+  height: 44px;
+  border-radius: 999px;
+  margin-bottom: 82px;
+  background-color: #0071e3;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  border: transparent;
+}
+.store {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.page2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 12px;
+  width: 100%;
+  row-gap: 12px;
+}
+.ipadair {
+  background-image: url(./jijigzurag1.jpg);
+  background-size: cover;
+  width: 942px;
+  height: 580px;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.ipadzurag {
+  width: 430px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+}
+.ipadairbichig {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.pizda {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 9px;
+}
+.ungutbichig {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 53px;
+}
+
+.airpod {
+  flex-direction: column;
+  color: white;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  background-image: url(./jijigzurag2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 942px;
+  height: 580px;
+  gap: 10px;
+}
+.airpodtext {
+  font-size: 36px;
+  font-weight: 600;
+}
+.sda {
+  margin-bottom: 58px;
+}
+.iwatch {
+  flex-direction: column;
+  color: black;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  background-image: url(./jijigzurag3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 942px;
+  height: 580px;
+  gap: 10px;
+}
+.iwatchtext {
+  font-size: 18px;
+  font-weight: 400;
+}
+.iwatchzurag {
+  width: 152px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+}
+.macbook {
+  flex-direction: column;
+  color: black;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  background-image: url(./jijigzurag4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 942px;
+  height: 580px;
+}
+.macbooktext {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 48px;
+}
+.macbookbichig {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+.tradein {
+  flex-direction: column;
+  color: black;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  background-image: url(./jijigzurag5.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 942px;
+  height: 580px;
+  gap: 10px;
+}
+.tradeintext {
+  font-size: 18px;
+  font-weight: 400;
+}
+.tradeinzurag {
+  width: 161px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  margin-top: 58.42px;
+}
+.card {
+  flex-direction: column;
+  color: black;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  background-image: url(./jijigzurag6.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 942px;
+  height: 580px;
+  gap: 10px;
+}
+.cardtext {
+  font-size: 18px;
+  font-weight: 400;
+}
+.cardzurag {
+  width: 161px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  margin-top: 58.42px;
+}
+.scroll {
+  display: flex;
+  width: 1920px;
+  height: 668px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
+.img1 {
+  background-image: url(./lady-in-the-lake.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img2 {
+  background-image: url(./ursdagzurag1.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img3 {
+  background-image: url(./ursdagzurag2.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img4 {
+  background-image: url(./ursdagzurag3.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img5 {
+  background-image: url(./napoleon.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img6 {
+  background-image: url(./bad-monkey.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img7 {
+  background-image: url(./instigators.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img8 {
+  background-image: url(./k-pop-idols.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img9 {
+  background-image: url(./season-pass.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.img10 {
+  background-image: url(./pachinko.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  background-position: center;
+  background-size: cover;
 }
