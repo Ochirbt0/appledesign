@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #layout {
   margin: 0 auto;
   width: 1920px;
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
+  background-color: #f5f5f7;
   gap: 12px;
 }
 .header {
@@ -13,7 +19,7 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  width: 100%;
+  width: 1920px;
   height: 44px;
 }
 
@@ -34,4 +40,148 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.donate {
+  display: flex;
+  width: 1920px;
+  height: 52px;
+  margin-top: 52px;
+  justify-content: center;
+  align-items: center;
+}
+.page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1920px;
+  gap: 12px;
+}
+.solongonheseg {
+  background-image: url(./solongo.png);
+  width: 100%;
+  height: 75px;
+}
+.thirdheseg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.solongontext {
+  font-size: 44px;
+  font-weight: 700;
+  color: #6e6e73;
+}
+.ehniineed {
+  display: flex;
+  gap: 16px;
+}
+.ehniineed img {
+  width: 35px;
+  height: 35px;
+}
+.huuhniizuragtaibichig {
+  /* margin-right: 140px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+.storesolongo {
+  margin-left: 140px;
+  font-size: 44px;
+  font-weight: 700;
+  background-image: linear-gradient(#0090f7, #ba62fc, #f2416b);
+  color: transparent;
+  background-clip: text;
+}
+.niilsenbichig {
+  display: flex;
+  column-gap: 32px;
+  justify-content: start;
+  align-items: start;
+}
+.need {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 140px;
+}
+.visit {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 145px;
+}
+.maciphoneipad {
+  display: flex;
+  gap: 12px;
+  margin-left: 140px;
+  margin-top: 80px;
+}
+.pictures img {
+  width: 120px;
+  height: 78px;
+}
+.text {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+.scrollfirst {
+  margin-left: 140px;
+}
+.rainbowtextlatest {
+  display: flex;
+  gap: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.solongonlatest {
+  background-image: linear-gradient(#0090f7, #ba62fc, #f2416b);
+  color: transparent;
+  background-clip: text;
+}
+.greytext {
+  color: #6e6e73;
+}
+.doodbichig {
+  display: flex;
+  flex-direction: column;
+  padding: 31px;
+  gap: 9px;
+}
+.ip16pro {
+  background-image: url(./ip16pro.jpg);
+  width: 480px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  margin-top: 24px;
+}
+#appleintelligence {
+  display: flex;
+  color: #b64400;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.gurvaljin {
+  width: 6px;
+  height: 9px;
+  font-size: 8px;
+}
+#ip16probichig {
+  font-size: 26px;
+  font-weight: 700;
+}
+#ip16une {
+  font-size: 18px;
+  font-weight: 400;
 }
