@@ -137,6 +137,7 @@
   font-weight: 700;
   margin-top: 60px;
   margin-left: 140px;
+  margin-bottom: 24px;
 }
 .solongonlatest {
   background-image: linear-gradient(#0090f7, #ba62fc, #f2416b);
@@ -278,11 +279,14 @@
   background-size: cover;
   background-position: center;
   border-radius: 18px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
 }
 .custombichig {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  margin-top: 53px;
+  margin-left: 30px;
   font-size: 26px;
   font-weight: 700;
 }
@@ -429,4 +433,58 @@
 .harbichigpencil {
   font-size: 18px;
   font-weight: 700;
+}
+.scrollthird {
+  gap: 20px;
+  margin-left: 140px;
+  display: flex;
+  height: 558px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.surprise {
+  background-image: url(./surprise.jpg);
+  width: 400px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.surprisebichig {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+  margin-left: 30px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.sharcase {
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  background-color: white;
+}
+.sharcaseniilsen {
+  display: flex;
+  flex-direction: column;
+}
+.sharcasezurag {
+  background-image: url(./shar\ case.jpg);
+  width: 230px;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 71px;
+  margin-left: 41.5px;
+}
+.sharcaselist {
+  background-image: url(./List\ -\ iPhone\ 16\ Silicone\ Case\ with\ MagSafe\ –\ Star\ FruitAvailable\ colors.png);
+  width: 253px;
+  height: 58px;
+  margin-left: 30px;
 }
