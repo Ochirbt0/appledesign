@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 1920px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 12px;
 }
@@ -12,10 +13,14 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  width: 1920px;
+  width: 100vw;
   height: 44px;
 }
-
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navigation {
   display: flex;
   gap: 24px;
@@ -76,8 +81,8 @@
 }
 .learnmore {
   border-radius: 999px;
-  width: 123px;
-  height: 44px;
+  width: 115px;
+  height: 40px;
   background-color: #0071e3;
   font-size: 16px;
   font-weight: 400;
@@ -126,12 +131,19 @@
   width: 114px;
   height: 44px;
   border-radius: 999px;
-  margin-bottom: 82px;
   background-color: #0071e3;
   font-size: 16px;
   font-weight: 400;
   color: white;
   border: transparent;
+}
+.niilsengift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  padding-bottom: 82px;
 }
 .store {
   font-size: 12px;
@@ -166,7 +178,6 @@
   height: 33px;
   display: flex;
   justify-content: center;
-  margin-top: 58px;
 }
 .ipadairbichig {
   display: flex;
@@ -175,19 +186,24 @@
   align-items: center;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 15px;
 }
 .pizda {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: 9px;
+  row-gap: 20px;
+  padding: 58px;
+}
+.ipadairniilsen {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
 }
 .ungutbichig {
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 53px;
+  padding-bottom: 53px;
 }
 
 .airpod {
@@ -201,14 +217,30 @@
   background-position: center;
   width: 942px;
   height: 580px;
-  gap: 10px;
+  row-gap: 10px;
 }
 .airpodtext {
   font-size: 36px;
   font-weight: 600;
 }
+.airpodbugd {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.airpodniilsen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 58px;
+  row-gap: 10px;
+}
 .sda {
-  margin-bottom: 58px;
+  display: flex;
+  column-gap: 16px;
 }
 .iwatch {
   flex-direction: column;
@@ -229,10 +261,28 @@
 }
 .iwatchzurag {
   width: 152px;
-  height: 61px;
+  height: 39px;
   display: flex;
   justify-content: center;
-  margin-top: 58px;
+}
+.series10 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.iwatchniilsen {
+  display: flex;
+  flex-direction: column;
+  padding: 58px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+}
+.iwatchbugd {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  justify-content: center;
+  align-items: center;
 }
 .macbook {
   flex-direction: column;
@@ -249,12 +299,25 @@
 .macbooktext {
   font-size: 36px;
   font-weight: 600;
-  margin-top: 48px;
 }
 .macbookbichig {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 9px;
+}
+.macbookbugd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2px;
+}
+.macbookniilsen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  padding: 48px;
 }
 .tradein {
   flex-direction: column;
@@ -267,7 +330,6 @@
   background-position: center;
   width: 942px;
   height: 580px;
-  gap: 10px;
 }
 .tradeintext {
   font-size: 18px;
@@ -278,7 +340,31 @@
   height: 39px;
   display: flex;
   justify-content: center;
-  margin-top: 58.42px;
+}
+.tradeinniilsen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4px;
+}
+.tradeinbugd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  padding: 58.42px;
+}
+.getyourestimate {
+  border-radius: 999px;
+  width: 167px;
+  height: 40px;
+  background-color: #0071e3;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  border: transparent;
 }
 .card {
   flex-direction: column;
@@ -291,7 +377,6 @@
   background-position: center;
   width: 942px;
   height: 580px;
-  gap: 10px;
 }
 .cardtext {
   font-size: 18px;
@@ -302,12 +387,26 @@
   height: 39px;
   display: flex;
   justify-content: center;
-  margin-top: 58.42px;
+}
+.cardzuragniilsen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4px;
+}
+.cardzuragbugd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+  align-items: center;
+  padding: 58px;
 }
 .scroll {
   display: flex;
-  width: 1920px;
-  height: 1000px;
+  width: 100%;
+  height: 668px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   gap: 12px;
@@ -327,8 +426,8 @@
   display: flex;
   align-items: end;
   background-image: url(./lady-in-the-lake.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   flex-shrink: 0;
   scroll-snap-align: center;
   background-position: center;
@@ -338,8 +437,8 @@
   display: flex;
   align-items: end;
   background-image: url(./ursdagzurag1.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -350,8 +449,8 @@
   display: flex;
   align-items: end;
   background-image: url(./ursdagzurag2.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -362,8 +461,8 @@
   display: flex;
   align-items: end;
   background-image: url(./ursdagzurag3.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -374,8 +473,8 @@
   display: flex;
   align-items: end;
   background-image: url(./napoleon.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -386,8 +485,8 @@
   display: flex;
   align-items: end;
   background-image: url(./bad-monkey.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -398,8 +497,8 @@
   display: flex;
   align-items: end;
   background-image: url(./instigators.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -410,8 +509,8 @@
   display: flex;
   align-items: end;
   background-image: url(./k-pop-idols.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   flex-shrink: 0;
   scroll-snap-align: center;
   background-position: center;
@@ -421,8 +520,8 @@
   display: flex;
   align-items: end;
   background-image: url(./season-pass.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -433,8 +532,8 @@
   display: flex;
   align-items: end;
   background-image: url(./pachinko.jpg);
-  width: 100%;
-  height: 100%;
+  width: 1250px;
+  height: 668px;
   object-fit: cover;
   flex-shrink: 0;
   scroll-snap-align: center;
@@ -445,8 +544,7 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  margin-bottom: 58px;
-  margin-left: 70px;
+  padding: 0px 0px 58px 70px;
 }
 .streambutton {
   font-size: 17px;
@@ -460,4 +558,88 @@
   font-size: 20px;
   font-weight: 400;
   color: white;
+}
+.group {
+  display: flex;
+  column-gap: 16px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.animationzurag1 {
+  background-image: url(boston.jpg);
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.animationzurag2 {
+  background-image: url(./fitness.jpg);
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.animationzurag3 {
+  background-image: url(./fitnesskyle.jpg);
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.animationzurag4 {
+  background-image: url(./football.jpg);
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.animationzurag5 {
+  background-image: url(./hellokitty.jpg);
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.animationzurag6 {
+  background-image: url(./runyourfirst.jpg);
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.animationzurag7 {
+  background-color: #1b2632;
+  width: 417px;
+  height: 236px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  display: flex;
+}
+.dotorzurag7 {
+  width: 196px;
+  height: 196px;
+  padding: 20px 0px 0px 15px;
+}
+.dotorbichig7 {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  width: 62px;
+  height: 18px;
 }
