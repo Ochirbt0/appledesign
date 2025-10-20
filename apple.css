@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #layout {
   margin: 0 auto;
-  width: 1920px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,10 +26,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 .navigation {
   display: flex;
   gap: 24px;
+
   justify-content: center;
   align-items: center;
 }
@@ -31,7 +39,18 @@
   display: flex;
   justify-content: start;
   align-items: start;
+  width: 30px;
+  height: 44px;
 }
+.jijiglogo2zuraas {
+  display: none;
+}
+.jijiglogonuud {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
 .headerbichig {
   font-size: 12px;
   font-weight: 400;
@@ -41,19 +60,23 @@
 }
 .donate {
   display: flex;
-  width: 1920px;
+  font-size: 14px;
   height: 52px;
   margin-top: 52px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .page1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1920px;
+
   gap: 12px;
+}
+.page1 ::-webkit-scrollbar {
+  display: none;
 }
 .arvanzurgaapro {
   background-image: url(./zurag1.jpg);
@@ -145,6 +168,7 @@
   row-gap: 16px;
   padding-bottom: 82px;
 }
+
 .store {
   font-size: 12px;
   font-weight: 400;
@@ -155,24 +179,39 @@
 }
 .page2 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  column-gap: 12px;
   width: 100%;
   row-gap: 12px;
+}
+.ehniidiv {
+  display: flex;
+  /* flex-direction: column; */
+  column-gap: 12px;
+}
+.hoyrdahidiv {
+  display: flex;
+  /* flex-direction: column; */
+  column-gap: 12px;
+}
+.guravdahidiv {
+  display: flex;
+  /* flex-direction: column; */
+  column-gap: 12px;
 }
 .ipadair {
   background-image: url(./jijigzurag1.jpg);
   background-size: cover;
-  width: 942px;
+  background-position: center;
+  width: 50%;
   height: 580px;
   display: flex;
-  background-size: cover;
-  background-position: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 58px 0 53px;
 }
+
 .ipadzurag {
   width: 430px;
   height: 33px;
@@ -188,13 +227,17 @@
   font-weight: 400;
 }
 .pizda {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   row-gap: 20px;
   padding: 58px;
 }
+.pizda-ve {
+  display: none;
+}
+
 .ipadairniilsen {
   display: flex;
   flex-direction: column;
@@ -204,6 +247,10 @@
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 53px;
+  display: none;
+  background: linear-gradient(90deg, #0090f7, #ba62fc, #f2416b, #f55600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .airpod {
@@ -215,7 +262,7 @@
   background-image: url(./jijigzurag2.jpg);
   background-size: cover;
   background-position: center;
-  width: 942px;
+  width: 50%;
   height: 580px;
   row-gap: 10px;
 }
@@ -238,8 +285,13 @@
   padding-bottom: 58px;
   row-gap: 10px;
 }
+.carrier {
+  display: none;
+}
 .sda {
   display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 16px;
 }
 .iwatch {
@@ -251,7 +303,7 @@
   background-image: url(./jijigzurag3.jpg);
   background-size: cover;
   background-position: center;
-  width: 942px;
+  width: 50%;
   height: 580px;
   gap: 10px;
 }
@@ -293,7 +345,7 @@
   background-image: url(./jijigzurag4.jpg);
   background-size: cover;
   background-position: center;
-  width: 942px;
+  width: 50%;
   height: 580px;
 }
 .macbooktext {
@@ -328,7 +380,7 @@
   background-image: url(./jijigzurag5.jpg);
   background-size: cover;
   background-position: center;
-  width: 942px;
+  width: 50%;
   height: 580px;
 }
 .tradeintext {
@@ -375,7 +427,7 @@
   background-image: url(./jijigzurag6.jpg);
   background-size: cover;
   background-position: center;
-  width: 942px;
+  width: 50%;
   height: 580px;
 }
 .cardtext {
@@ -402,6 +454,51 @@
   row-gap: 16px;
   align-items: center;
   padding: 58px;
+}
+.applebusiness {
+  display: none;
+  flex-direction: column;
+  color: black;
+  justify-content: start;
+  align-items: center;
+  background-image: url(./responsmall.png);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 580px;
+}
+.applebusinesstext {
+  font-size: 36px;
+  font-weight: 600;
+}
+.applebusinessbichig {
+  font-size: 18px;
+  font-weight: 400;
+}
+.applebusinessbugd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2px;
+}
+.applebusinessniilsen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  padding: 48px;
+}
+.learnmoretablet {
+  border-radius: 999px;
+  width: 115px;
+  height: 40px;
+  background-color: #0071e3;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  border: transparent;
 }
 .scroll {
   display: flex;
@@ -559,13 +656,19 @@
   font-weight: 400;
   color: white;
 }
+.animation {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+.animation ::-webkit-scrollbar {
+  display: none;
+}
 .group {
   display: flex;
   column-gap: 16px;
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  animation: spin 30s infinite linear;
 }
 .animationzurag1 {
   background-image: url(boston.jpg);
@@ -642,4 +745,1601 @@
   font-weight: 600;
   width: 62px;
   height: 18px;
+  padding: 109px 15px;
+}
+
+.ipadair-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ungutbichigpage2 {
+  font-size: 14px;
+  font-weight: 500;
+  background: linear-gradient(#0090f7, #ba62fc, #f2416b);
+  color: transparent;
+  background-clip: text;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  #layout {
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  .header {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100vw;
+    height: 44px;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .jijiglogo {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 48px;
+    height: 48px;
+  }
+  .jijiglogo2zuraas {
+    display: block;
+  }
+  .jijiglogonuud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerbichig {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .donate {
+    display: flex;
+    width: 100%;
+    height: 52px;
+    margin-top: 52px;
+    justify-content: center;
+    align-items: center;
+  }
+  .page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .arvanzurgaapro {
+    background-image: url(./ip16protablet.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    padding-top: 55px;
+  }
+  .bichig {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .ip16 {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .hello-apple-bichig {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .learnmore {
+    border-radius: 999px;
+    width: 115px;
+    height: 40px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+  .buy {
+    border-radius: 999px;
+    width: 68px;
+    height: 44px;
+    background-color: transparent;
+    color: #2997ff;
+    border: 1px solid #2997ff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .arvanzurgaa {
+    background-image: url(./ip16tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    padding-top: 55px;
+  }
+
+  .pizda {
+    display: none;
+  }
+  .pizda-ve {
+    display: block;
+  }
+  .gift {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./jijigzurag1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 692px;
+    row-gap: 16px;
+  }
+  .giftmagic {
+    font-size: 52px;
+    font-weight: 600;
+  }
+  .jijig-giftbichig {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .shopgifts {
+    width: 114px;
+    height: 44px;
+    border-radius: 999px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+
+  .niilsengift {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    padding-bottom: 82px;
+  }
+  .store {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: none;
+  }
+  .page2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    column-gap: 12px;
+    width: 100%;
+    row-gap: 12px;
+  }
+  .ehniidiv {
+    display: flex;
+  }
+  .hoyrdahidiv {
+    display: flex;
+  }
+  .guravdahidiv {
+    display: flex;
+  }
+  .ipadair {
+    background-image: url(./responairpods4.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 490px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ipadzurag {
+    display: none;
+    width: 430px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+  }
+  .ipadairbichig {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .ipadairniilsentablet {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ipadairniilsen {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+  }
+  .ungutbichig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(90deg #0090f7, #ba62fc, #f2416b);
+    color: transparent;
+    background-clip: text;
+  }
+  .ungutbichigpage2 {
+    display: none;
+    background: linear-gradient(90deg #0090f7, #ba62fc, #f2416b);
+    color: transparent;
+    background-clip: text;
+  }
+  .buurtomipad {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .airpod {
+    flex-direction: column;
+    color: white;
+    justify-content: end;
+    align-items: center;
+    display: none;
+    background-image: url(./jijigzurag2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 490px;
+    row-gap: 10px;
+  }
+  .airpodtext {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .airpodbugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .airpodniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 58px;
+    row-gap: 10px;
+  }
+  .airpodrespon {
+    display: block;
+  }
+  .airpod4text {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 90%;
+  }
+  .airpod4bichig {
+    text-align: center;
+  }
+  .airpod4bugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .airpod4niilsen {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding-bottom: 58px; */
+    row-gap: 10px;
+  }
+  .carrier {
+    flex-direction: column;
+    color: white;
+    justify-content: end;
+    align-items: center;
+    display: block;
+    background-image: url(./responcarrier.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 490px;
+    row-gap: 10px;
+  }
+  .carriertext {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1d1d1f;
+  }
+  .carrierbugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60%;
+  }
+  .carrierniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 58px;
+    row-gap: 10px;
+  }
+  .carrierbichig {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d1d1f;
+  }
+  .carrierrespon {
+    display: block;
+  }
+  .learnmoretabletcarrier {
+    border-radius: 999px;
+    width: 126px;
+    height: 36px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+  .sdatablet {
+    display: block;
+  }
+  .sda {
+    display: flex;
+    column-gap: 16px;
+  }
+  .iwatch {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    background-image: url(./responiwatch.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+    gap: 10px;
+  }
+  .iwatchtext {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .iwatchzurag {
+    width: 152px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+  }
+  .series10 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .iwatchniilsen {
+    display: flex;
+    flex-direction: column;
+    padding: 58px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+  }
+  .iwatchbugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  .applebusiness {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    background-image: url(./responsmall.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+  }
+  .applebusinesstext {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .applebusinessbichig {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .applebusinessbugd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2px;
+  }
+  .appleninessniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 48px;
+  }
+  .applebusiness {
+    display: block;
+  }
+  .tradein {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    background-image: url(./jijigzurag5.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+  }
+  .tradeintext {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .tradeinzurag {
+    width: 161px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+  }
+  .tradeinniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
+  }
+  .tradeinbugd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    padding: 58.42px;
+  }
+  .getyourestimate {
+    border-radius: 999px;
+    width: 167px;
+    height: 40px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+  .card {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: none;
+    background-image: url(./jijigzurag6.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+  }
+  .cardbichig {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .cardzurag {
+    width: 161px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+  }
+  .cardzuragniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
+  }
+  .cardzuragbugd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+    align-items: center;
+    padding: 58px;
+  }
+  .scroll {
+    display: flex;
+    width: 100%;
+    height: 368px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    scroll-behavior: smooth;
+  }
+  .dots {
+    display: flex;
+    gap: 14px;
+  }
+  .dot {
+    background-color: #000000cc;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .img1 {
+    display: flex;
+    align-items: end;
+    background-image: url(./lady-in-the-lake.jpg);
+    width: 90%;
+    height: 368px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    display: flex;
+    align-items: end;
+    background-image: url(./ursdagzurag1.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    display: flex;
+    align-items: end;
+    background-image: url(./ursdagzurag2.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    display: flex;
+    align-items: end;
+    background-image: url(./ursdagzurag3.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    display: flex;
+    align-items: end;
+    background-image: url(./napoleon.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    display: flex;
+    align-items: end;
+    background-image: url(./bad-monkey.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img7 {
+    display: flex;
+    align-items: end;
+    background-image: url(./instigators.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img8 {
+    display: flex;
+    align-items: end;
+    background-image: url(./k-pop-idols.jpg);
+    width: 90%;
+    height: 368px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img9 {
+    display: flex;
+    align-items: end;
+    background-image: url(./season-pass.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img10 {
+    display: flex;
+    align-items: end;
+    background-image: url(./pachinko.jpg);
+    width: 80%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .stream {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 15px;
+  }
+  .streambutton {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 999px;
+    width: 108px;
+    height: 36px;
+    border: none;
+  }
+  .genre {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+  }
+  .group {
+    display: flex;
+    column-gap: 16px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .animationzurag1 {
+    background-image: url(boston.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag2 {
+    background-image: url(./fitness.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag3 {
+    background-image: url(./fitnesskyle.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag4 {
+    background-image: url(./football.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag5 {
+    background-image: url(./hellokitty.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag6 {
+    background-image: url(./runyourfirst.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag7 {
+    background-color: #1b2632;
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    display: flex;
+  }
+  .dotorzurag7 {
+    width: 196px;
+    height: 196px;
+    padding: 20px 0px 0px 15px;
+  }
+  .dotorbichig7 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    width: 62px;
+    height: 18px;
+  }
+
+  .ipadair-text {
+    display: none;
+  }
+
+  .pizda {
+    display: flex;
+    color: white;
+  }
+}
+@media (max-width: 767px) {
+  #layout {
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  .header {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100vw;
+    height: 44px;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .jijiglogo {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 48px;
+    height: 48px;
+  }
+  .jijiglogo2zuraas {
+    display: block;
+  }
+  .jijiglogonuud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerbichig {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .donate {
+    display: flex;
+    width: 100%;
+    height: 52px;
+    margin-top: 52px;
+    justify-content: center;
+    align-items: center;
+  }
+  .page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .arvanzurgaapro {
+    background-image: url(./ip16promobile.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    padding-top: 55px;
+  }
+  .bichig {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .ip16 {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .hello-apple-bichig {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .learnmore {
+    border-radius: 999px;
+    width: 115px;
+    height: 40px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+  .buy {
+    border-radius: 999px;
+    width: 68px;
+    height: 44px;
+    background-color: transparent;
+    color: #2997ff;
+    border: 1px solid #2997ff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .arvanzurgaa {
+    background-image: url(./ip16mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    padding-top: 55px;
+  }
+
+  .pizda {
+    display: none;
+  }
+  .pizda-ve {
+    display: block;
+  }
+  .gift {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./jijigzurag1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    row-gap: 16px;
+  }
+  .giftmagic {
+    font-size: 52px;
+    font-weight: 600;
+  }
+  .jijig-giftbichig {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .shopgifts {
+    width: 114px;
+    height: 44px;
+    border-radius: 999px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+
+  .niilsengift {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    padding-bottom: 82px;
+  }
+  .store {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: none;
+  }
+  .page2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+    width: 100%;
+    row-gap: 12px;
+  }
+  .ehniidiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .hoyrdahidiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .guravdahidiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .ipadair {
+    background-image: url(./responairpods4.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 490px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ipadzurag {
+    display: none;
+    width: 430px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+  }
+  .ipadairbichig {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .ipadairniilsentablet {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ipadairniilsen {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+  }
+  .ungutbichig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(90deg #0090f7, #ba62fc, #f2416b);
+    color: transparent;
+    background-clip: text;
+  }
+  .ungutbichigpage2 {
+    display: none;
+    background: linear-gradient(90deg #0090f7, #ba62fc, #f2416b);
+    color: transparent;
+    background-clip: text;
+  }
+  .buurtomipad {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .airpod {
+    flex-direction: column;
+    color: white;
+    justify-content: end;
+    align-items: center;
+    display: none;
+    background-image: url(./jijigzurag2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 490px;
+    row-gap: 10px;
+  }
+  .airpodtext {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .airpodbugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .airpodniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 58px;
+    row-gap: 10px;
+  }
+  .airpodrespon {
+    display: block;
+  }
+  .airpod4text {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 90%;
+  }
+  .airpod4bichig {
+    text-align: center;
+  }
+  .airpod4bugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .airpod4niilsen {
+    display: flex;
+
+    justify-content: space-between;
+
+    row-gap: 10px;
+  }
+  .carrier {
+    flex-direction: column;
+    color: white;
+    justify-content: end;
+    align-items: center;
+    display: block;
+    background-image: url(./responcarrier.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 490px;
+    row-gap: 10px;
+  }
+  .carriertext {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1d1d1f;
+  }
+  .carrierbugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60%;
+  }
+  .carrierniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 58px;
+    row-gap: 10px;
+  }
+  .carrierbichig {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d1d1f;
+  }
+  .carrierrespon {
+    display: block;
+  }
+  .learnmoretabletcarrier {
+    border-radius: 999px;
+    width: 126px;
+    height: 36px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+  .sdatablet {
+    display: block;
+  }
+  .sda {
+    display: flex;
+    column-gap: 16px;
+  }
+  .iwatch {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    background-image: url(./responiwatch.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+    gap: 10px;
+  }
+  .iwatchtext {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .iwatchzurag {
+    width: 152px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+  }
+  .series10 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .iwatchniilsen {
+    display: flex;
+    flex-direction: column;
+    padding: 58px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+  }
+  .iwatchbugd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  .applebusiness {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    background-image: url(./responsmall.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+  }
+  .applebusinesstext {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .applebusinessbichig {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .applebusinessbugd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2px;
+  }
+  .appleninessniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 48px;
+  }
+  .applebusiness {
+    display: block;
+  }
+  .tradein {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    background-image: url(./jijigzurag5.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+  }
+  .tradeintext {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .tradeinzurag {
+    width: 161px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+  }
+  .tradeinniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
+  }
+  .tradeinbugd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    padding: 58.42px;
+  }
+  .getyourestimate {
+    border-radius: 999px;
+    width: 167px;
+    height: 40px;
+    background-color: #0071e3;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: transparent;
+  }
+  .card {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: none;
+    background-image: url(./jijigzurag6.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 580px;
+  }
+  .cardbichig {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .cardzurag {
+    width: 161px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+  }
+  .cardzuragniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
+  }
+  .cardzuragbugd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+    align-items: center;
+    padding: 58px;
+  }
+  .scroll {
+    display: flex;
+    width: 100%;
+    height: 368px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    scroll-behavior: smooth;
+  }
+  .dots {
+    display: flex;
+    gap: 14px;
+  }
+  .dot {
+    background-color: #000000cc;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .img1 {
+    display: flex;
+    align-items: end;
+    background-image: url(./lady-in-the-lake.jpg);
+    width: 90%;
+    height: 368px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img2 {
+    display: flex;
+    align-items: end;
+    background-image: url(./ursdagzurag1.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img3 {
+    display: flex;
+    align-items: end;
+    background-image: url(./ursdagzurag2.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img4 {
+    display: flex;
+    align-items: end;
+    background-image: url(./ursdagzurag3.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img5 {
+    display: flex;
+    align-items: end;
+    background-image: url(./napoleon.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img6 {
+    display: flex;
+    align-items: end;
+    background-image: url(./bad-monkey.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img7 {
+    display: flex;
+    align-items: end;
+    background-image: url(./instigators.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img8 {
+    display: flex;
+    align-items: end;
+    background-image: url(./k-pop-idols.jpg);
+    width: 90%;
+    height: 368px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img9 {
+    display: flex;
+    align-items: end;
+    background-image: url(./season-pass.jpg);
+    width: 90%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .img10 {
+    display: flex;
+    align-items: end;
+    background-image: url(./pachinko.jpg);
+    width: 80%;
+    height: 368px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .stream {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 15px;
+  }
+  .streambutton {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 999px;
+    width: 108px;
+    height: 36px;
+    border: none;
+  }
+  .genre {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+  }
+  .group {
+    display: flex;
+    column-gap: 16px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .animationzurag1 {
+    background-image: url(boston.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag2 {
+    background-image: url(./fitness.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag3 {
+    background-image: url(./fitnesskyle.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag4 {
+    background-image: url(./football.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag5 {
+    background-image: url(./hellokitty.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag6 {
+    background-image: url(./runyourfirst.jpg);
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  .animationzurag7 {
+    background-color: #1b2632;
+    width: 286px;
+    height: 161px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    display: flex;
+  }
+  .dotorzurag7 {
+    width: 196px;
+    height: 196px;
+    padding: 20px 0px 0px 15px;
+  }
+  .dotorbichig7 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    width: 62px;
+    height: 18px;
+  }
+
+  .ipadair-text {
+    display: none;
+  }
+
+  .pizda {
+    display: flex;
+    color: white;
+  }
 }

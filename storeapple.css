@@ -3,10 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 #layout {
   margin: 0 auto;
-
   background-color: #f5f5f7;
   gap: 12px;
 }
