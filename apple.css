@@ -86,7 +86,15 @@
   height: 692px;
   padding-top: 55px;
 }
-.bichig {
+.bichigehnii {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.bichig2dahi {
   display: flex;
   flex-direction: column;
   color: white;
@@ -246,7 +254,7 @@
 .ungutbichig {
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 53px;
+  /* padding-bottom: 62px; */
   display: none;
   background: linear-gradient(90deg, #0090f7, #ba62fc, #f2416b, #f55600);
   -webkit-background-clip: text;
@@ -667,8 +675,7 @@
 .group {
   display: flex;
   column-gap: 16px;
-  display: flex;
-  animation: spin 30s infinite linear;
+  animation: spin 10s infinite linear;
 }
 .animationzurag1 {
   background-image: url(boston.jpg);
@@ -770,7 +777,7 @@
     translate: -100%;
   }
 }
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   #layout {
     margin: 0 auto;
     width: 100vw;
@@ -805,6 +812,7 @@
   }
   .jijiglogo2zuraas {
     display: block;
+    margin-right: 15px;
   }
   .jijiglogonuud {
     display: flex;
@@ -840,9 +848,16 @@
     background-position: center;
     width: 100%;
     height: 650px;
-    padding-top: 55px;
   }
-  .bichig {
+  .bichigehnii {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .bichig2dahi {
     display: flex;
     flex-direction: column;
     color: white;
@@ -943,7 +958,7 @@
   }
   .page2 {
     display: flex;
-    /* flex-direction: column; */
+
     justify-content: center;
     column-gap: 12px;
     width: 100%;
@@ -1008,6 +1023,7 @@
     background: linear-gradient(90deg #0090f7, #ba62fc, #f2416b);
     color: transparent;
     background-clip: text;
+    /* margin-top: 100px; */
   }
   .ungutbichigpage2 {
     display: none;
@@ -1104,7 +1120,7 @@
     row-gap: 2px;
     justify-content: center;
     align-items: center;
-    margin-top: 60%;
+    margin-top: 296px;
   }
   .carrierniilsen {
     display: flex;
@@ -1329,7 +1345,7 @@
     display: flex;
     align-items: end;
     background-image: url(./lady-in-the-lake.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -1340,7 +1356,7 @@
     display: flex;
     align-items: end;
     background-image: url(./ursdagzurag1.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1352,7 +1368,7 @@
     display: flex;
     align-items: end;
     background-image: url(./ursdagzurag2.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1364,7 +1380,7 @@
     display: flex;
     align-items: end;
     background-image: url(./ursdagzurag3.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1376,7 +1392,7 @@
     display: flex;
     align-items: end;
     background-image: url(./napoleon.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1388,7 +1404,7 @@
     display: flex;
     align-items: end;
     background-image: url(./bad-monkey.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1400,7 +1416,7 @@
     display: flex;
     align-items: end;
     background-image: url(./instigators.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1412,7 +1428,7 @@
     display: flex;
     align-items: end;
     background-image: url(./k-pop-idols.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -1423,7 +1439,7 @@
     display: flex;
     align-items: end;
     background-image: url(./season-pass.jpg);
-    width: 90%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1435,7 +1451,7 @@
     display: flex;
     align-items: end;
     background-image: url(./pachinko.jpg);
-    width: 80%;
+    width: 689px;
     height: 368px;
     object-fit: cover;
     flex-shrink: 0;
@@ -1462,11 +1478,14 @@
     font-weight: 400;
     color: white;
   }
+  footer {
+    height: 262px;
+  }
   .group {
     display: flex;
     column-gap: 16px;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
@@ -1591,6 +1610,7 @@
   }
   .jijiglogo2zuraas {
     display: block;
+    margin-right: 15px;
   }
   .jijiglogonuud {
     display: flex;
@@ -1609,7 +1629,7 @@
     display: flex;
     width: 100%;
     height: 52px;
-    margin-top: 52px;
+    padding: 18px 31px 0px 31px;
     justify-content: center;
     align-items: center;
   }
@@ -1628,7 +1648,16 @@
     height: 500px;
     padding-top: 55px;
   }
-  .bichig {
+  .bichigehnii {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 260px;
+  }
+  .bichig2dahi {
     display: flex;
     flex-direction: column;
     color: white;
@@ -1637,17 +1666,18 @@
     gap: 16px;
   }
   .ip16 {
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
   }
   .hello-apple-bichig {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
+    color: #f5f5f7;
   }
   .learnmore {
     border-radius: 999px;
-    width: 115px;
-    height: 40px;
+    width: 107px;
+    height: 36px;
     background-color: #0071e3;
     font-size: 16px;
     font-weight: 400;
@@ -1656,8 +1686,8 @@
   }
   .buy {
     border-radius: 999px;
-    width: 68px;
-    height: 44px;
+    width: 66px;
+    height: 36px;
     background-color: transparent;
     color: #2997ff;
     border: 1px solid #2997ff;
@@ -1737,20 +1767,23 @@
   .ehniidiv {
     display: flex;
     flex-direction: column;
+    row-gap: 12px;
   }
   .hoyrdahidiv {
     display: flex;
     flex-direction: column;
+    row-gap: 12px;
   }
   .guravdahidiv {
     display: flex;
     flex-direction: column;
+    row-gap: 12px;
   }
   .ipadair {
     background-image: url(./responairpods4.jpg);
     background-size: cover;
-    width: 50%;
-    height: 490px;
+    width: 100%;
+    height: 500px;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -1818,8 +1851,8 @@
     background-image: url(./jijigzurag2.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 490px;
+    width: 100%;
+    height: 500px;
     row-gap: 10px;
   }
   .airpodtext {
@@ -1845,8 +1878,8 @@
     display: block;
   }
   .airpod4text {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     text-align: center;
     margin-top: 90%;
   }
@@ -1876,14 +1909,15 @@
     background-image: url(./responcarrier.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 490px;
+    width: 100%;
+    height: 500px;
     row-gap: 10px;
   }
   .carriertext {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     color: #1d1d1f;
+    text-align: center;
   }
   .carrierbugd {
     display: flex;
@@ -1891,7 +1925,7 @@
     row-gap: 2px;
     justify-content: center;
     align-items: center;
-    margin-top: 60%;
+    margin-top: 301px;
   }
   .carrierniilsen {
     display: flex;
@@ -1920,6 +1954,10 @@
     color: white;
     border: transparent;
   }
+  .learnmoretablet {
+    width: 107px;
+    height: 36px;
+  }
   .sdatablet {
     display: block;
   }
@@ -1936,8 +1974,8 @@
     background-image: url(./responiwatch.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 580px;
+    width: 100%;
+    height: 500px;
     gap: 10px;
   }
   .iwatchtext {
@@ -1969,6 +2007,41 @@
     justify-content: center;
     align-items: center;
   }
+  .macbook {
+    flex-direction: column;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    background-image: url(./jijigzurag4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+  }
+  .macbooktext {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .macbookbichig {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .macbookbugd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2px;
+  }
+  .macbookniilsen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 48px;
+  }
   .applebusiness {
     flex-direction: column;
     color: black;
@@ -1977,12 +2050,12 @@
     background-image: url(./responsmall.png);
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 580px;
+    width: 100%;
+    height: 500px;
   }
   .applebusinesstext {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     text-align: center;
   }
   .applebusinessbichig {
@@ -2017,7 +2090,7 @@
     background-image: url(./jijigzurag5.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 100%;
     height: 580px;
   }
   .tradeintext {
@@ -2064,7 +2137,7 @@
     background-image: url(./jijigzurag6.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 100%;
     height: 580px;
   }
   .cardbichig {
@@ -2096,7 +2169,7 @@
   .scroll {
     display: flex;
     width: 100%;
-    height: 368px;
+    height: 495px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     gap: 12px;
@@ -2115,9 +2188,9 @@
   .img1 {
     display: flex;
     align-items: end;
-    background-image: url(./lady-in-the-lake.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile1.jpg);
+    width: 274px;
+    height: 495px;
     flex-shrink: 0;
     scroll-snap-align: center;
     background-position: center;
@@ -2126,9 +2199,9 @@
   .img2 {
     display: flex;
     align-items: end;
-    background-image: url(./ursdagzurag1.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile2.jpg);
+    width: 274px;
+    height: 495px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -2138,9 +2211,9 @@
   .img3 {
     display: flex;
     align-items: end;
-    background-image: url(./ursdagzurag2.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile3.jpg);
+    width: 274px;
+    height: 495px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -2150,9 +2223,9 @@
   .img4 {
     display: flex;
     align-items: end;
-    background-image: url(./ursdagzurag3.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile4.jpg);
+    width: 274px;
+    height: 495px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -2162,9 +2235,9 @@
   .img5 {
     display: flex;
     align-items: end;
-    background-image: url(./napoleon.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile5.jpg);
+    width: 274px;
+    height: 495px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -2174,9 +2247,9 @@
   .img6 {
     display: flex;
     align-items: end;
-    background-image: url(./bad-monkey.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile6.jpg);
+    width: 274px;
+    height: 495px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -2186,9 +2259,9 @@
   .img7 {
     display: flex;
     align-items: end;
-    background-image: url(./instigators.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile7.jpg);
+    width: 274px;
+    height: 495px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -2196,39 +2269,21 @@
     background-size: cover;
   }
   .img8 {
-    display: flex;
+    display: none;
     align-items: end;
-    background-image: url(./k-pop-idols.jpg);
-    width: 90%;
-    height: 368px;
+    background-image: url(./mobile8.jpg);
+    width: 274px;
+    height: 495px;
     flex-shrink: 0;
     scroll-snap-align: center;
     background-position: center;
     background-size: cover;
   }
   .img9 {
-    display: flex;
-    align-items: end;
-    background-image: url(./season-pass.jpg);
-    width: 90%;
-    height: 368px;
-    object-fit: cover;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    background-position: center;
-    background-size: cover;
+    display: none;
   }
   .img10 {
-    display: flex;
-    align-items: end;
-    background-image: url(./pachinko.jpg);
-    width: 80%;
-    height: 368px;
-    object-fit: cover;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    background-position: center;
-    background-size: cover;
+    display: none;
   }
   .stream {
     display: flex;
@@ -2249,6 +2304,9 @@
     font-weight: 400;
     color: white;
   }
+  footer {
+    height: 216px;
+  }
   .group {
     display: flex;
     column-gap: 16px;
@@ -2259,8 +2317,8 @@
   }
   .animationzurag1 {
     background-image: url(boston.jpg);
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -2268,8 +2326,8 @@
   }
   .animationzurag2 {
     background-image: url(./fitness.jpg);
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -2277,8 +2335,8 @@
   }
   .animationzurag3 {
     background-image: url(./fitnesskyle.jpg);
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -2286,8 +2344,8 @@
   }
   .animationzurag4 {
     background-image: url(./football.jpg);
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -2295,8 +2353,8 @@
   }
   .animationzurag5 {
     background-image: url(./hellokitty.jpg);
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -2304,8 +2362,8 @@
   }
   .animationzurag6 {
     background-image: url(./runyourfirst.jpg);
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -2313,8 +2371,8 @@
   }
   .animationzurag7 {
     background-color: #1b2632;
-    width: 286px;
-    height: 161px;
+    width: 238px;
+    height: 134px;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
