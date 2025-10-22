@@ -1,4 +1,4 @@
-* {
+i* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -234,7 +234,7 @@
   font-size: 18px;
   font-weight: 400;
 }
-.pizda {
+.airpodall {
   display: none;
   flex-direction: column;
   justify-content: start;
@@ -242,7 +242,7 @@
   row-gap: 20px;
   padding: 58px;
 }
-.pizda-ve {
+.airpodall-ve {
   display: none;
 }
 
@@ -902,10 +902,10 @@
     padding-top: 55px;
   }
 
-  .pizda {
+  .airpodall {
     display: none;
   }
-  .pizda-ve {
+  .airpodall-ve {
     display: block;
   }
   .gift {
@@ -1570,7 +1570,7 @@
     display: none;
   }
 
-  .pizda {
+  .airpodall {
     display: flex;
     color: white;
   }
@@ -1703,10 +1703,10 @@
     padding-top: 55px;
   }
 
-  .pizda {
+  .airpodall {
     display: none;
   }
-  .pizda-ve {
+  .airpodall-ve {
     display: block;
   }
   .gift {
@@ -2298,11 +2298,13 @@
     width: 108px;
     height: 36px;
     border: none;
+    display: none;
   }
   .genre {
     font-size: 17px;
     font-weight: 400;
     color: white;
+    display: none;
   }
   footer {
     height: 216px;
@@ -2396,7 +2398,7 @@
     display: none;
   }
 
-  .pizda {
+  .airpodall {
     display: flex;
     color: white;
   }
